@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contador 14</title>
+        <style>
+            *{
+                margin: 100;
+                box-sizing: border-box;
+            }
+            body{
+                border: 30px solid rgb(19, 126, 99);
+                min-height: 100vh;
+                background: rgb(23, 41, 129);
+                color:beige;
+                display: grid;
+                place-items: center;
+            }
+
+            section{
+                background: rgb(185, 139, 185);
+                padding: 20px;
+                border-radius: 30px;
+                text-align: center;
+            }
+            p {
+                font-size: 100px;
+                
+            }
+            h1{
+                font-size: 35px;
+            }
+            button {
+                font-size: 25px;
+                background: rgb(60, 255, 0);
+                border-radius: 50px;
+                border-light: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+        
+            <h1>Contador 14</h1>
+            
+            <p>0</p>
+            
+            <button onclick="diminuir()">Menos</button>
+            <button onclick="reset()">reset</button>
+            <button onclick="aumentar()">Mais</button>
+            <button onclick="major()">10</button>
+
+        </section>
+
+
+
+
+        
+        <script>
+        
+            let numero = 0
+
+            function major() {    
+            numero = numero + 10
+            mostrarNaTela()
+             }   
+
+            function reset() {
+                numero = 0
+                mostrarNaTela()
+            }
+
+            function diminuir() {
+                numero = numero - 1
+                mostrarNaTela()
+            }
+            function aumentar() {
+                numero = numero + 1
+                mostrarNaTela()
+            
+            
+            }
+            function mostrarNaTela(){  
+            const p = document.querySelector("p")
+            
+            p.innerText= numero
+             }
+             
+             mostrarNaTela()
+
+
+            
+
+
+
+             
+
+        </script>
+    </body>
+
+
+</html>
